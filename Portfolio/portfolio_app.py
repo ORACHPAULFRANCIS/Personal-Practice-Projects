@@ -73,9 +73,8 @@ with col2:
 
 Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations. 
 
-Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence. 
+Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence. 
 
-Seeking to contribute to high-impact petroleum engineering projects through innovative problem-solving and cross-functional collaboration.
     </div>
     """, unsafe_allow_html=True)
 
