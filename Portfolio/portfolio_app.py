@@ -1,6 +1,9 @@
+
 # portfolio_app.py (Canva-Inspired Version)
 
 import streamlit as st
+
+st.markdown('<meta name="theme-color" content="#ffffff">', unsafe_allow_html=True)
 
 st.set_page_config(
     page_title="Orach Paul Francis | Portfolio",
@@ -13,71 +16,65 @@ st.set_page_config(
 # -----------------------------
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-html, body, [class*="css"] {
-    font-family: 'Inter', sans-serif !important;
-    background: linear-gradient(to right, #dbeafe, #e0f2fe) !important;
-    color: #1f2937 !important;
-}
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(to right, #dbeafe, #e0f2fe) !important;
+        color: #1f2937 !important;
+    }
 
-h1, h2, h3, h4, h5, h6, p, div, span {
-    color: #1f2937 !important;
-}
+    /* Force consistent card and section colors in dark mode */
+    .card, .stMarkdown, .stText, .stSubheader, .stTitle {
+        color: #1f2937 !important;
+        background-color: white !important;
+    }
 
-.stApp {
-    background: linear-gradient(to right, #dbeafe, #e0f2fe) !important;
-    color: #1f2937 !important;
-}
+    .stButton>button {
+        background-color: #2563eb;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+        transition: 0.3s ease;
+    }
+    .stButton>button:hover {
+        background-color: #1d4ed8;
+    }
 
-.card, .stMarkdown, .stText, .stSubheader, .stTitle {
-    background-color: white !important;
-    color: #1f2937 !important;
-    border-radius: 12px;
-}
+    .stImage>img {
+        border-radius: 50%;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
 
-.stButton>button {
-    background-color: #2563eb !important;
-    color: white !important;
-    padding: 0.6rem 1.2rem !important;
-    border-radius: 8px !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    border: none !important;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3) !important;
-    transition: 0.3s ease !important;
-}
+    h1, h2, h3 {
+        color: #1e3a8a;
+        font-weight: 800;
+    }
 
-.stButton>button:hover {
-    background-color: #1d4ed8 !important;
-}
+    hr {
+        border: none;
+        height: 2px;
+        background: #93c5fd;
+        margin: 2rem 0;
+    }
 
-.stImage>img {
-    border-radius: 50% !important;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1) !important;
-}
-
-hr {
-    border: none !important;
-    height: 2px !important;
-    background: #93c5fd !important;
-    margin: 2rem 0 !important;
-}
-
-/* 🔗 Link styling */
-a {
-    color: #2563eb !important;
-    text-decoration: none !important;
-    font-weight: 600 !important;
-    transition: color 0.3s ease !important;
-}
-a:hover {
-    color: #1d4ed8 !important;
-    text-decoration: underline !important;
-}
+    /* 🔗 Link styling */
+    a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
 </style>
 """, unsafe_allow_html=True)
-
 
 # -----------------------------
 # Header
