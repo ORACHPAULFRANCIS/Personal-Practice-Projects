@@ -184,4 +184,4 @@ elif parameter == "Flow Rate":
 # Footer
 st.markdown("---")
 st.markdown("Made with ❤️ by Orach Paul Francis")
-st.markdown("🔗 [View Source on GitHub](https://github.com/ORACHPAULFRANCIS/oilfield-unit-converter)")
+st.markdown("🔗 [View Source on GitHub](https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/blob/main/%23%20Oilfield%20Unit%20Converter.py)")
