@@ -6,7 +6,7 @@ This is a responsive, elegant portfolio web app built using [Streamlit](https://
 
 ## 🚀 Live Demo
 
-👉 [https://orach-portfolio.streamlit.app](https://orach-portfolio.streamlit.app) *(custom domain optional)*
+👉 [https://orach-portfolio.streamlit.app](https://orach-portfolio.streamlit.app) 
 
 ---
 
