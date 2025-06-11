@@ -99,7 +99,7 @@ st.markdown("""
 <b>Bachelor of Science in Oil and Gas Production</b><br>
 Kyambogo University
 <br><br>
-More available on [LinkedIn](https://linkedin.com/in/orachpaulfrancis)
+More available on <a href='https://linkedin.com/in/orachpaulfrancis' target='_blank'>LinkedIn</a>
 </div>
 """, unsafe_allow_html=True)
 
