@@ -1,57 +1,59 @@
-# portfolio_app.py (Enhanced Aesthetic Version)
+# portfolio_app.py (Canva-Inspired Version)
 
 import streamlit as st
 
 st.set_page_config(
     page_title="Orach Paul Francis | Portfolio",
     page_icon="🧰",
-    layout="centered"
+    layout="wide"
 )
 
 # -----------------------------
-# Custom CSS for Aesthetic Styling
+# Canva-Inspired CSS Styling
 # -----------------------------
 st.markdown("""
 <style>
-    body {
-        background-color: #f0f4f8;
-    }
-    .main {
-        background: linear-gradient(135deg, #f0f4f8, #e6f0fa);
-        font-family: 'Segoe UI', sans-serif;
-        padding: 2rem;
-        border-radius: 15px;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+    html, body, [class*="css"]  {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(to right, #dbeafe, #e0f2fe);
+        color: #1f2937;
     }
     .stButton>button {
-        background-color: #007ACC;
+        background-color: #2563eb;
         color: white;
-        padding: 10px 24px;
-        border-radius: 10px;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
         font-size: 16px;
+        font-weight: 600;
         border: none;
-        transition: 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+        transition: 0.3s;
     }
     .stButton>button:hover {
-        background-color: #005b99;
-    }
-    .stMarkdown h1, h2, h3, h4 {
-        color: #003366;
-    }
-    .css-1aumxhk {
-        max-width: 900px;
-        margin: auto;
+        background-color: #1d4ed8;
     }
     .stImage>img {
         border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+        color: #1e3a8a;
+        font-weight: 800;
     }
     hr {
         border: none;
-        height: 1px;
-        background: #007ACC;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        height: 2px;
+        background: #93c5fd;
+        margin: 2rem 0;
+    }
+    .card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+        margin-bottom: 2rem;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -59,96 +61,100 @@ st.markdown("""
 # -----------------------------
 # Header
 # -----------------------------
-col1, col2 = st.columns([1, 3])
+col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("Portfolio/orach.jpg", width=150)
+    st.image("orach.jpg", width=180)
 with col2:
     st.title("Orach Paul Francis")
-    st.subheader("Problem Solver | Petroleum Engineer | Python Developer | Agile Project Manager")
+    st.markdown("#### Petroleum Engineer | Python Developer | Oilfield Innovator")
     st.markdown("""
+    <div class='card'>
     Dynamic and results-driven Petroleum Engineer with strong expertise in formation evaluation,
     well log interpretation, digital oilfield integration, and oilfield safety solutions. Proficient in
     Geolog, Techlog, Petrel, Python, and geospatial tools like ArcGIS and QGIS. Passionate about
     bridging petroleum engineering with software innovation for upstream success.
-    """)
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # -----------------------------
-# Education & Certifications
+# Education
 # -----------------------------
-st.header("🎓 Education")
-col3, col4 = st.columns(2)
-with col3:
-    st.write("**BSc. Oil and Gas Production**")
-    st.caption("Kyambogo University")
-with col4:
-    st.write("**More on LinkedIn**")
-    st.markdown("[View Profile](https://linkedin.com/in/orachpaulfrancis)")
-
-st.markdown("<hr>", unsafe_allow_html=True)
+st.subheader("🎓 Education")
+st.markdown("""
+<div class='card'>
+<b>Bachelor of Science in Oil and Gas Production</b><br>
+Kyambogo University
+<br><br>
+More available on [LinkedIn](https://linkedin.com/in/orachpaulfrancis)
+</div>
+""", unsafe_allow_html=True)
 
 # -----------------------------
 # Featured Projects
 # -----------------------------
-st.header("🛠️ Featured Projects")
+st.subheader("🛠️ Featured Projects")
 
-col5, col6 = st.columns(2)
-with col5:
+col3, col4 = st.columns(2)
+with col3:
     st.markdown("""
-    - 🛢️ [Oilfield Unit Converter](https://orach-oilfield-converter.streamlit.app/):
-      Convert pressure, temperature, volume, flow rate, and more.
-    """)
-with col6:
-    st.markdown("""
-    - 🧙‍♂️ [Sorting Hat Game](https://orach.pythonanywhere.com/):
-      Fun logic-based web app inspired by the Harry Potter Sorting Hat.
-    """)
+    <div class='card'>
+    🛢️ <b><a href='https://orach-oilfield-converter.streamlit.app/' target='_blank'>Oilfield Unit Converter</a></b><br>
+    Web-based app for converting pressure, temperature, volume, flow rate, and more.
+    </div>
+    """, unsafe_allow_html=True)
 
-st.markdown("<hr>", unsafe_allow_html=True)
+with col4:
+    st.markdown("""
+    <div class='card'>
+    🧙‍♂️ <b><a href='https://orach.pythonanywhere.com/' target='_blank'>Sorting Hat Game</a></b><br>
+    A fun web app inspired by Harry Potter’s Sorting Hat — coded in Flask.
+    </div>
+    """, unsafe_allow_html=True)
 
 # -----------------------------
 # Key Skills
 # -----------------------------
-st.header("🔧 Key Skills")
+st.subheader("🔧 Key Skills")
 
-col7, col8 = st.columns(2)
-with col7:
+col5, col6 = st.columns(2)
+with col5:
     st.markdown("""
-    - Log Analysis (Determin, Multimin)
-    - Formation Evaluation (Geolog, Techlog, Petrel)
-    - Python, Pandas, Matplotlib
-    - Streamlit App Development
-    - Geospatial Analysis (ArcGIS, QGIS, Surfer)
-    - Digital Oilfield Integration
-    - Data Visualization & Analysis (Power BI)
-    """)
-with col8:
-    st.markdown("""
-    - Well Log Interpretation
-    - Scrum & Agile Methodologies
-    - HSE Compliance & Field Safety
-    - Project Management & Planning
-    - Strategic Planning & Execution
-    - Communication & Team Leadership
-    - Continuous Learning & Adaptability
-    """)
+    <div class='card'>
+    - Log Analysis (Determin, Multimin)<br>
+    - Geolog, Techlog, Petrel<br>
+    - Python, Pandas, Streamlit<br>
+    - ArcGIS, QGIS, Surfer<br>
+    - Digital Oilfield Integration<br>
+    </div>
+    """, unsafe_allow_html=True)
 
-st.markdown("<hr>", unsafe_allow_html=True)
+with col6:
+    st.markdown("""
+    <div class='card'>
+    - Well Log Interpretation<br>
+    - HSE & Field Safety Compliance<br>
+    - Agile & Scrum Methodologies<br>
+    - Power BI, Data Viz & Dashboards<br>
+    - Team Collaboration & Project Management
+    </div>
+    """, unsafe_allow_html=True)
 
 # -----------------------------
-# Links
+# Connect With Me
 # -----------------------------
-st.header("🔗 Connect With Me")
+st.subheader("🔗 Connect With Me")
 st.markdown("""
-📫 **Contact Me:**  
-[LinkedIn](http://linkedin.com/in/orachpaulfrancis) | [GitHub](http://github.com/ORACHPAULFRANCIS) |
-[Kaggle](https://www.kaggle.com/orachpaulfrancis) | [HackerRank](https://www.hackerrank.com/profile/orachpf) |
+<div class='card'>
+📫 [LinkedIn](http://linkedin.com/in/orachpaulfrancis) | [GitHub](http://github.com/ORACHPAULFRANCIS) | 
+[Kaggle](https://www.kaggle.com/orachpaulfrancis) | [HackerRank](https://www.hackerrank.com/profile/orachpf) | 
 [Codedex](https://www.codedex.io/@Orach) | [Microsoft Learn](https://learn.microsoft.com/en-us/users/orachpaulfrancis-0241/achievements)
-""")
+</div>
+""", unsafe_allow_html=True)
 
 # -----------------------------
 # Footer
 # -----------------------------
 st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown("Created with ❤️ using Streamlit | © 2025 Orach Paul Francis")
+st.markdown("<div style='text-align:center; font-size:14px;'>Created with ❤️ using Streamlit | © 2025 Orach Paul Francis</div>", unsafe_allow_html=True)
