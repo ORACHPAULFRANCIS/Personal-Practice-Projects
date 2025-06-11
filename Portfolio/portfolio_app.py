@@ -1,4 +1,4 @@
-# portfolio_app.py (Final Modernized Version)
+# portfolio_app.py (Enhanced Aesthetic Version)
 
 import streamlit as st
 
@@ -9,13 +9,18 @@ st.set_page_config(
 )
 
 # -----------------------------
-# Custom CSS for styling
+# Custom CSS for Aesthetic Styling
 # -----------------------------
 st.markdown("""
 <style>
+    body {
+        background-color: #f0f4f8;
+    }
     .main {
-        background-color: #f4f6f8;
+        background: linear-gradient(135deg, #f0f4f8, #e6f0fa);
         font-family: 'Segoe UI', sans-serif;
+        padding: 2rem;
+        border-radius: 15px;
     }
     .stButton>button {
         background-color: #007ACC;
@@ -25,6 +30,7 @@ st.markdown("""
         font-size: 16px;
         border: none;
         transition: 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .stButton>button:hover {
         background-color: #005b99;
@@ -32,11 +38,20 @@ st.markdown("""
     .stMarkdown h1, h2, h3, h4 {
         color: #003366;
     }
-    .css-1aumxhk { max-width: 800px; margin: auto; }
-    .social-icons a {
-        margin-right: 10px;
-        text-decoration: none;
-        font-weight: bold;
+    .css-1aumxhk {
+        max-width: 900px;
+        margin: auto;
+    }
+    .stImage>img {
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    hr {
+        border: none;
+        height: 1px;
+        background: #007ACC;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -57,6 +72,8 @@ with col2:
     bridging petroleum engineering with software innovation for upstream success.
     """)
 
+st.markdown("<hr>", unsafe_allow_html=True)
+
 # -----------------------------
 # Education & Certifications
 # -----------------------------
@@ -68,6 +85,8 @@ with col3:
 with col4:
     st.write("**More on LinkedIn**")
     st.markdown("[View Profile](https://linkedin.com/in/orachpaulfrancis)")
+
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # -----------------------------
 # Featured Projects
@@ -85,6 +104,8 @@ with col6:
     - 🧙‍♂️ [Sorting Hat Game](https://orach.pythonanywhere.com/):
       Fun logic-based web app inspired by the Harry Potter Sorting Hat.
     """)
+
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # -----------------------------
 # Key Skills
@@ -113,6 +134,8 @@ with col8:
     - Continuous Learning & Adaptability
     """)
 
+st.markdown("<hr>", unsafe_allow_html=True)
+
 # -----------------------------
 # Links
 # -----------------------------
@@ -127,5 +150,5 @@ st.markdown("""
 # -----------------------------
 # Footer
 # -----------------------------
-st.markdown("---")
+st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("Created with ❤️ using Streamlit | © 2025 Orach Paul Francis")
