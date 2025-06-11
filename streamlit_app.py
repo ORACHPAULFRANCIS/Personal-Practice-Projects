@@ -94,7 +94,7 @@ def from_kelvin(kelvin, unit):
 # ----------------------------
 # Streamlit UI
 # ----------------------------
-st.title("Oilfield Unit Converter")
+st.title("Oilfield Unit Converter created by Eng. Orach")
 parameter = st.selectbox("Select parameter to convert:", ["Pressure", "Temperature", "Volume", "Depth", "Density", "Flow Rate"])
 
 if parameter == "Pressure":
