@@ -147,12 +147,17 @@ with col6:
 # -----------------------------
 st.subheader("🔗 Connect With Me")
 st.markdown("""
-<div class='card'>
-📫 [LinkedIn](http://linkedin.com/in/orachpaulfrancis) | [GitHub](http://github.com/ORACHPAULFRANCIS) | 
-[Kaggle](https://www.kaggle.com/orachpaulfrancis) | [HackerRank](https://www.hackerrank.com/profile/orachpf) | 
-[Codedex](https://www.codedex.io/@Orach) | [Microsoft Learn](https://learn.microsoft.com/en-us/users/orachpaulfrancis-0241/achievements)
+<div class='card' style='line-height: 2; font-size: 16px;'>
+📫 You can find me on: <br>
+<a href='https://linkedin.com/in/orachpaulfrancis' target='_blank'>LinkedIn</a> |
+<a href='https://github.com/ORACHPAULFRANCIS' target='_blank'>GitHub</a> |
+<a href='https://www.kaggle.com/orachpaulfrancis' target='_blank'>Kaggle</a> |
+<a href='https://www.hackerrank.com/profile/orachpf' target='_blank'>HackerRank</a> |
+<a href='https://www.codedex.io/@Orach' target='_blank'>Codedex</a> |
+<a href='https://learn.microsoft.com/en-us/users/orachpaulfrancis-0241/achievements' target='_blank'>Microsoft Learn</a>
 </div>
 """, unsafe_allow_html=True)
+
 
 # -----------------------------
 # Footer
