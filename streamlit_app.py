@@ -179,9 +179,4 @@ elif parameter == "Flow Rate":
     if st.button("Convert Flow Rate"):
         base = value * flow_units[from_unit]
         result = base / flow_units[to_unit]
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
-
-# Footer
-st.markdown("---")
-st.markdown("Made with ❤️ by Orach Paul Francis")
-st.markdown("🔗 [View Source on GitHub](https://github.com/yourusername/oilfield-unit-converter)")
+        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
