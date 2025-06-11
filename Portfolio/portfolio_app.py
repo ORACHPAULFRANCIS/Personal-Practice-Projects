@@ -1,9 +1,7 @@
 
 # portfolio_app.py (Canva-Inspired Version)
-
-import streamlit as st
-
 st.markdown('<meta name="theme-color" content="#ffffff">', unsafe_allow_html=True)
+import streamlit as st
 
 st.set_page_config(
     page_title="Orach Paul Francis | Portfolio",
