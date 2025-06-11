@@ -69,10 +69,13 @@ with col2:
     st.markdown("#### Top Problem Solving Voice | Petroleum Engineer | Python Coder | Chairperson Membership Committee (Geological Society of Uganda) | IWCF 1 | Petrophysics | Power BI | Agile Project Management | Solutions Architecture")
     st.markdown("""
     <div class='card'>
-    Dynamic and results-driven Petroleum Engineer with strong expertise in formation evaluation,
-    well log interpretation, digital oilfield integration, and oilfield safety solutions. Proficient in
-    Geolog, Techlog, Petrel, Python, and geospatial tools like ArcGIS and QGIS. Passionate about
-    bridging petroleum engineering with software innovation for upstream success.
+    Dynamic and results-driven Petroleum Engineer with strong expertise in subsurface data interpretation, formation evaluation, drilling planning, data analysis with python and technical project execution within the oil and gas sector.
+
+Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations. 
+
+Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence. 
+
+Seeking to contribute to high-impact petroleum engineering projects through innovative problem-solving and cross-functional collaboration.
     </div>
     """, unsafe_allow_html=True)
 
