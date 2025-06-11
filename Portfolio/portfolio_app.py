@@ -20,6 +20,17 @@ st.markdown("""
         background: linear-gradient(to right, #dbeafe, #e0f2fe);
         color: #1f2937;
     }
+    /* 🔗 Link styling */
+    a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
     .stButton>button {
         background-color: #2563eb;
         color: white;
