@@ -8,24 +8,30 @@ industry, this tool provides accurate and fast conversions across multiple petro
 Key Features
 
 1. Pressure Conversion
-Convert between Pascal, psi, bar, atm, kg/cm², and more with real-world accuracy.
+   
+   Convert between Pascal, psi, bar, atm, kg/cm², and more with real-world accuracy.
 
 2. Temperature Conversion
-Easily switch between Celsius, Fahrenheit, Kelvin, Rankine, Delisle, and other historical temperature units 
-using absolute reference logic.
+   
+   Easily switch between Celsius, Fahrenheit, Kelvin, Rankine, Delisle, and other historical temperature units 
+   using absolute reference logic.
 
 3. Volume Conversion
-Convert between liters, barrels, cubic meters, gallons, and more; ideal for fluid calculations and logistics.
+   
+   Convert between liters, barrels, cubic meters, gallons, and more; ideal for fluid calculations and logistics.
 
 4. Depth Conversion
-Supports both metric and imperial units, including meters, feet, inches, and miles; suitable for drilling 
+   
+   Supports both metric and imperial units, including meters, feet, inches, and miles; suitable for drilling 
 and subsurface measurement.
 
 5. Density Conversion
-Convert between kg/m³, g/cm³, lb/ft³, and lb/gal; essential for mud, fluid, and reservoir calculations.
+    
+   Convert between kg/m³, g/cm³, lb/ft³, and lb/gal; essential for mud, fluid, and reservoir calculations.
 
 6. Flow Rate Conversion
-Convert between l/s, bbl/d, gpm, m³/h, and more commonly used in production, pipeline, and surface facility operations.
+   
+   Convert between l/s, bbl/d, gpm, m³/h, and more commonly used in production, pipeline, and surface facility operations.
 
 Why Use This App?
 
