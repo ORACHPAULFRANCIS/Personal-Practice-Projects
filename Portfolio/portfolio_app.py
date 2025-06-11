@@ -66,7 +66,7 @@ with col1:
     st.image("Portfolio/orach.jpg", width=200)
 with col2:
     st.title("Orach Paul Francis")
-    st.markdown("#### Petroleum Engineer | Python Developer | Oilfield Innovator")
+    st.markdown("#### Top Problem Solving Voice | Petroleum Engineer | Python Coder | Chairperson Membership Committee (Geological Society of Uganda) | IWCF 1 | Petrophysics | Power BI | Agile Project Management | Solutions Architecture")
     st.markdown("""
     <div class='card'>
     Dynamic and results-driven Petroleum Engineer with strong expertise in formation evaluation,
