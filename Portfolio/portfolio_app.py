@@ -74,7 +74,6 @@ with col2:
 Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations. 
 
 Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence. 
-
     </div>
     """, unsafe_allow_html=True)
 
