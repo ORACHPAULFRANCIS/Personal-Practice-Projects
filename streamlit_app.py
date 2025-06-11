@@ -1,9 +1,44 @@
-# streamlit_app.py
+# streamlit_app.py (Enhanced UI Version)
 
 import streamlit as st
 
 # ----------------------------
-# Unit dictionaries
+# UI Settings
+# ----------------------------
+st.set_page_config(
+    page_title="Oilfield Converter",
+    page_icon="🛢️",
+    layout="centered"
+)
+
+st.markdown("""
+<style>
+    .main {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .stButton > button {
+        background-color: #007ACC;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+    }
+    .stSelectbox > div, .stTextInput > div, .stNumberInput > div {
+        border-radius: 10px;
+    }
+    .block-container {
+        padding-top: 2rem;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+st.title("🛢️ Oilfield Unit Converter")
+st.subheader("Quickly convert oilfield parameters with precision.")
+
+# ----------------------------
+# Unit Dictionaries
 # ----------------------------
 pressure_units = {
     "pa": 1,
@@ -62,7 +97,6 @@ flow_units = {
     'gpm': 3.78541 / 60
 }
 
-# Temperature conversion helpers
 temp_units = ['c', 'f', 'k', 'r', 'de', 'n', 're', 'ro']
 
 def to_kelvin(value, unit):
@@ -92,61 +126,62 @@ def from_kelvin(kelvin, unit):
     return conversions[unit](kelvin)
 
 # ----------------------------
-# Streamlit UI
+# Parameter Selector
 # ----------------------------
-st.title("Oilfield Unit Converter")
-parameter = st.selectbox("Select parameter to convert:", ["Pressure", "Temperature", "Volume", "Depth", "Density", "Flow Rate"])
+parameter = st.selectbox("📌 Select parameter to convert:", ["Pressure", "Temperature", "Volume", "Depth", "Density", "Flow Rate"])
+
+col1, col2 = st.columns(2)
+value = col1.number_input("🔢 Enter value", format="%f")
 
 if parameter == "Pressure":
-    from_unit = st.selectbox("From Unit", pressure_units.keys())
-    to_unit = st.selectbox("To Unit", pressure_units.keys())
-    value = st.number_input("Enter value", format="%f")
-    if st.button("Convert"):
+    from_unit = col1.selectbox("From Unit", pressure_units.keys())
+    to_unit = col2.selectbox("To Unit", pressure_units.keys())
+    if st.button("Convert Pressure"):
         pa = value * pressure_units[from_unit]
         result = pa / pressure_units[to_unit]
-        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
 
 elif parameter == "Temperature":
-    from_unit = st.selectbox("From Unit", temp_units)
-    to_unit = st.selectbox("To Unit", temp_units)
-    value = st.number_input("Enter value", format="%f")
-    if st.button("Convert"):
+    from_unit = col1.selectbox("From Unit", temp_units)
+    to_unit = col2.selectbox("To Unit", temp_units)
+    if st.button("Convert Temperature"):
         kelvin = to_kelvin(value, from_unit)
         result = from_kelvin(kelvin, to_unit)
-        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
 
 elif parameter == "Volume":
-    from_unit = st.selectbox("From Unit", volume_units.keys())
-    to_unit = st.selectbox("To Unit", volume_units.keys())
-    value = st.number_input("Enter value", format="%f")
-    if st.button("Convert"):
+    from_unit = col1.selectbox("From Unit", volume_units.keys())
+    to_unit = col2.selectbox("To Unit", volume_units.keys())
+    if st.button("Convert Volume"):
         liters = value * volume_units[from_unit]
         result = liters / volume_units[to_unit]
-        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
 
 elif parameter == "Depth":
-    from_unit = st.selectbox("From Unit", depth_units.keys())
-    to_unit = st.selectbox("To Unit", depth_units.keys())
-    value = st.number_input("Enter value", format="%f")
-    if st.button("Convert"):
+    from_unit = col1.selectbox("From Unit", depth_units.keys())
+    to_unit = col2.selectbox("To Unit", depth_units.keys())
+    if st.button("Convert Depth"):
         meters = value * depth_units[from_unit]
         result = meters / depth_units[to_unit]
-        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
 
 elif parameter == "Density":
-    from_unit = st.selectbox("From Unit", density_units.keys())
-    to_unit = st.selectbox("To Unit", density_units.keys())
-    value = st.number_input("Enter value", format="%f")
-    if st.button("Convert"):
+    from_unit = col1.selectbox("From Unit", density_units.keys())
+    to_unit = col2.selectbox("To Unit", density_units.keys())
+    if st.button("Convert Density"):
         kg_m3 = value * density_units[from_unit]
         result = kg_m3 / density_units[to_unit]
-        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
 
 elif parameter == "Flow Rate":
-    from_unit = st.selectbox("From Unit", flow_units.keys())
-    to_unit = st.selectbox("To Unit", flow_units.keys())
-    value = st.number_input("Enter value", format="%f")
-    if st.button("Convert"):
+    from_unit = col1.selectbox("From Unit", flow_units.keys())
+    to_unit = col2.selectbox("To Unit", flow_units.keys())
+    if st.button("Convert Flow Rate"):
         base = value * flow_units[from_unit]
         result = base / flow_units[to_unit]
-        st.success(f"{value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+
+# Footer
+st.markdown("---")
+st.markdown("Made with ❤️ by Orach Paul Francis")
+st.markdown("🔗 [View Source on GitHub](https://github.com/yourusername/oilfield-unit-converter)")
