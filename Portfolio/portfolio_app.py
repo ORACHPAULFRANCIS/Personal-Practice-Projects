@@ -1,6 +1,4 @@
-
-# portfolio_app.py (Canva-Inspired Version)
-st.markdown('<meta name="theme-color" content="#ffffff">', unsafe_allow_html=True)
+# portfolio_app.py (Refined Canva-Inspired Version)
 import streamlit as st
 
 st.set_page_config(
@@ -18,14 +16,8 @@ st.markdown("""
 
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
-        background: linear-gradient(to right, #dbeafe, #e0f2fe) !important;
-        color: #1f2937 !important;
-    }
-
-    /* Force consistent card and section colors in dark mode */
-    .card, .stMarkdown, .stText, .stSubheader, .stTitle {
-        color: #1f2937 !important;
-        background-color: white !important;
+        background: linear-gradient(to right, #dbeafe, #e0f2fe);
+        color: #1f2937;
     }
 
     .stButton>button {
@@ -60,7 +52,6 @@ st.markdown("""
         margin: 2rem 0;
     }
 
-    /* 🔗 Link styling */
     a {
         color: #2563eb;
         text-decoration: none;
@@ -70,6 +61,13 @@ st.markdown("""
     a:hover {
         color: #1d4ed8;
         text-decoration: underline;
+    }
+
+    .card {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -85,11 +83,11 @@ with col2:
     st.markdown("#### Top Problem Solving Voice | Petroleum Engineer | Python Coder | Chairperson Membership Committee (Geological Society of Uganda) | IWCF 1 | Petrophysics | Power BI | Agile Project Management | Solutions Architecture")
     st.markdown("""
     <div class='card'>
-    Dynamic and results-driven Petroleum Engineer with strong expertise in subsurface data interpretation, formation evaluation, drilling planning, data analysis with python and technical project execution within the oil and gas sector.
+    Dynamic and results-driven Petroleum Engineer with strong expertise in subsurface data interpretation, formation evaluation, drilling planning, data analysis with Python, and technical project execution within the oil and gas sector.
 
-Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations. 
+    Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations.
 
-Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence. 
+    Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence.
     </div>
     """, unsafe_allow_html=True)
 
@@ -143,7 +141,7 @@ with col5:
     - Geolog, Techlog, Petrel<br>
     - Python, Pandas, Streamlit<br>
     - ArcGIS, QGIS, Surfer<br>
-    - Digital Oilfield Integration<br>
+    - Digital Oilfield Integration
     </div>
     """, unsafe_allow_html=True)
 
@@ -173,7 +171,6 @@ st.markdown("""
 <a href='https://learn.microsoft.com/en-us/users/orachpaulfrancis-0241/achievements' target='_blank'>Microsoft Learn</a>
 </div>
 """, unsafe_allow_html=True)
-
 
 # -----------------------------
 # Footer
