@@ -119,7 +119,7 @@ with col8:
 st.header("🔗 Connect With Me")
 st.markdown("""
 📫 **Contact Me:**  
-[LinkedIn](http://linkedin.com/in/orachpaulfrancis) | [GitHub](http://github.com/ORACHPAULFRANCIS) |
+[Email](orachpf@gmail.com) | [LinkedIn](http://linkedin.com/in/orachpaulfrancis) | [GitHub](http://github.com/ORACHPAULFRANCIS) |
 [Kaggle](https://www.kaggle.com/orachpaulfrancis) | [HackerRank](https://www.hackerrank.com/profile/orachpf) |
 [Codedex](https://www.codedex.io/@Orach) | [Microsoft Learn](https://learn.microsoft.com/en-us/users/orachpaulfrancis-0241/achievements)
 """)
