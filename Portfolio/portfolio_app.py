@@ -223,14 +223,6 @@ for cert in certificates:
     </div>
     """, unsafe_allow_html=True)
 
-cols = st.columns(3)
-for i, cert in enumerate(certificates):
-    with cols[i % 3]:
-        st.subheader(cert["title"])
-        st.caption(cert["description"])
-        st.markdown(f'<iframe src="{cert["url"]}" width="100%" height="300px" style="border:1px solid #ccc;"></iframe>', unsafe_allow_html=True)
-        st.markdown("---")
-
 # -----------------------------
 # Footer
 # -----------------------------
