@@ -212,18 +212,22 @@ certificates = [
     {"title": "Work with Requirements for Microsoft Power Platform", "description": "Gathering and managing requirements for Power Platform and Dynamics 365 solutions.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Work%20with%20requirements%20for%20Microsoft%20Power%20Platform%20and%20Dynamics%20365.pdf"},
 ]
 
-cols = st.columns(3)
-
 # Sort certificates alphabetically by title
 certificates = sorted(certificates, key=lambda x: x["title"])
-for cert in certificates:
-    st.markdown(f"""
-    <div class='card'>
-    📄 <b>{cert['title']}</b><br>
-    {cert['description']}<br>
-    <a href="{cert['url']}" target="_blank">View Certificate</a>
-    </div>
-    """, unsafe_allow_html=True)
+# Create 3 columns
+cols = st.columns(3)
+
+# Distribute certificates evenly across the 3 columns
+for idx, cert in enumerate(certificates):
+    with cols[idx % 3]:
+        st.markdown(f"""
+        <div class='card' style='padding:10px; border:1px solid #e6e6e6; border-radius:8px; margin-bottom:10px; background-color:#f9f9f9;'>
+        📄 <b>{cert['title']}</b><br>
+        {cert['description']}<br>
+        <a href="{cert['url']}" target="_blank">View Certificate</a>
+        </div>
+        """, unsafe_allow_html=True)
+
 
 # -----------------------------
 # Footer
