@@ -12,73 +12,64 @@ st.set_page_config(
 # -----------------------------
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif;
-        background-color: rgb(30, 30, 30) !important;     /* Dark background */
-        color: rgb(235, 235, 235) !important;             /* Soft white text */
-    }
+  html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 33, 33);
+  }
 
-    .card, .stMarkdown, .stText, .stSubheader, .stTitle {
-        background-color: rgb(30, 30, 30) !important;     /* Secondary background */
-        color: rgb(235, 235, 235) !important;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
+  .card, .stMarkdown, .stText, .stSubheader, .stTitle {
+    background-color: rgb(240, 248, 245);
+    color: rgb(33, 33, 33);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
 
-    .stButton > button {
-        background-color: rgb(37, 99, 235) !important;    /* Primary blue */
-        color: white;
-        padding: 0.6rem 1.2rem;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        border: none;
-        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-        transition: 0.3s ease;
-    }
+  .stButton > button {
+    background-color: rgb(0, 128, 90);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0, 128, 90, 0.3);
+    transition: background 0.3s ease;
+  }
+  .stButton > button:hover {
+    background-color: rgb(0, 153, 110);
+  }
 
-    .stButton > button:hover {
-        background-color: rgb(29, 78, 216) !important;    /* Darker on hover */
-    }
+  h1, h2, h3 {
+    color: rgb(0, 102, 72);
+    font-weight: 800;
+  }
 
-    .stImage > img {
-        border-radius: 50%;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.6);
-    }
+  a {
+    color: rgb(0, 128, 90);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  a:hover {
+    color: rgb(0, 153, 110);
+    text-decoration: underline;
+  }
 
-    h1, h2, h3 {
-        color: #90cdf4 !important; /* Light blue headers */
-        font-weight: 800;
-    }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 128, 90);
+    margin: 2rem 0;
+  }
 
-    hr {
-        border: none;
-        height: 2px;
-        background: #2563eb; /* Primary blue */
-        margin: 2rem 0;
-    }
-
-    a {
-        color: #3b82f6 !important; /* Link blue */
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.3s ease;
-    }
-
-    a:hover {
-        color: #60a5fa !important;
-        text-decoration: underline;
-    }
-
-    /* Muted text (for footnotes, captions) */
-    .muted {
-        color: rgb(160, 160, 160) !important;
-        font-size: 14px;
-    }
+  .stImage > img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 </style>
+
 
 """, unsafe_allow_html=True)
 
