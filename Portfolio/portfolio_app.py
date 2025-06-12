@@ -214,6 +214,14 @@ certificates = [
 
 # Sort certificates alphabetically by title
 certificates = sorted(certificates, key=lambda x: x["title"])
+for cert in certificates:
+    st.markdown(f"""
+    <div class='card'>
+    📄 <b>{cert['title']}</b><br>
+    {cert['description']}<br>
+    <a href="{cert['url']}" target="_blank">View Certificate</a>
+    </div>
+    """, unsafe_allow_html=True)
 
 cols = st.columns(3)
 for i, cert in enumerate(certificates):
