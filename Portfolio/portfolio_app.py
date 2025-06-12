@@ -178,8 +178,10 @@ st.markdown("""
 # -----------------------------
 
 st.title("📄 My Certifications")
-st.write("Below are some of my certifications, you can find the rest on LinkedIn. Use the scroll bars to explore each certificate.")
 
+with st.expander("Click to view my certifications"):
+    st.markdown("You can view any certificate by clicking its link. No downloads required. More are available on [LinkedIn](https://linkedin.com/in/orachpaulfrancis).")
+    
 certificates = [
     {"title": "Agile Project Management", "description": "Certified in Agile principles and project lifecycle management.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Agile%20Project%20Management.pdf"},
     {"title": "Agile Scrum Foundation", "description": "Foundational understanding of Agile methodologies and Scrum framework.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Agile%20Scrum%20Foundation.pdf"},
