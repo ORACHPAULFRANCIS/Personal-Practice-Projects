@@ -212,6 +212,8 @@ certificates = [
     {"title": "Work with Requirements for Microsoft Power Platform", "description": "Gathering and managing requirements for Power Platform and Dynamics 365 solutions.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Work%20with%20requirements%20for%20Microsoft%20Power%20Platform%20and%20Dynamics%20365.pdf"},
 ]
 
+cols = st.columns(3)
+
 # Sort certificates alphabetically by title
 certificates = sorted(certificates, key=lambda x: x["title"])
 for cert in certificates:
