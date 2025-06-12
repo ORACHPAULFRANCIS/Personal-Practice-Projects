@@ -16,7 +16,7 @@ st.markdown("""
 
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
-        background-color: rgb(18, 18, 18) !important;     /* Dark background */
+        background-color: rgb(30, 30, 30) !important;     /* Dark background */
         color: rgb(235, 235, 235) !important;             /* Soft white text */
     }
 
