@@ -176,19 +176,59 @@ st.markdown("""
 # -----------------------------
 # Certifications
 # -----------------------------
-st.subheader("📄 Certifications")
 
-st.markdown("""
-<div class='card'>
-SPWLA Membership Appreciation Certificate 
-<a href="https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/blob/main/Portfolio/SPWLA%20Membership%20Appreciation%20Certificate.pdf" target="_blank">
-👁️ View Certificate in Browser
-</a>
-</div>
-""", unsafe_allow_html=True)
+st.title("📄 My Certifications")
+st.write("Below are some of my certifications, you can find the rest on LinkedIn. Use the scroll bars to explore each certificate.")
+
+certificates = [
+    {"title": "Agile Project Management", "description": "Certified in Agile principles and project lifecycle management.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Agile%20Project%20Management.pdf"},
+    {"title": "Agile Scrum Foundation", "description": "Foundational understanding of Agile methodologies and Scrum framework.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Agile%20Scrum%20Foundation.pdf"},
+    {"title": "BSG INTERNSHIP CERTIFICATE", "description": "Internship certificate from Big Solutions Group.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/BSG%20INTERNSHIP%20CERTIFICATE%20.pdf"},
+    {"title": "Becoming a Solution Architect", "description": "Learning path for becoming a solution architect in Dynamics 365 and Power Platform.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Becoming%20a%20solution%20architect%20for%20Dynamics%20365%20and%20Microsoft%20Power%20Platform.pdf"},
+    {"title": "Challenge Project - Microsoft Power Platform", "description": "Hands-on project building Microsoft Power Platform solutions.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Challenge%20project%20-%20Create%20Microsoft%20Power%20Platform%20solutions.pdf"},
+    {"title": "Clean, Transform, and Load Data with Power BI", "description": "Power BI data preparation techniques.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Clean%2C%20transform%2C%20and%20load%20data%20with%20Power%20BI.pdf"},
+    {"title": "Create a Power BI Model Framework", "description": "Designing robust data models in Power BI.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Create%20a%20Power%20BI%20model%20framework.pdf"},
+    {"title": "Design a Semantic Model in Power BI", "description": "Semantic modeling best practices in Power BI.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Design%20a%20semantic%20model%20in%20Power%20BI.pdf"},
+    {"title": "Discover Data Analysis", "description": "Introductory course on data analysis principles.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Discover%20Data%20Analysis.pdf"},
+    {"title": "Discover Customer Needs", "description": "Analyzing customer requirements as a solution architect.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Discover%20customer%20needs%20as%20a%20Solution%20Architect%20for%20Dynamics%20365%20and%20Microsoft%20Power%20Platform.pdf"},
+    {"title": "Effective Leadership", "description": "Certificate in leadership and communication skills.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Effective%20Leadership.pdf"},
+    {"title": "GIS for Climate Action", "description": "Using GIS tools in support of climate resilience.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/GIS%20For%20Climate%20Action.pdf"},
+    {"title": "Get Data in Power BI", "description": "Importing and connecting to data sources in Power BI.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Get%20Data%20in%20Power%20BI.pdf"},
+    {"title": "Get Started With Copilot in Power BI", "description": "Introduction to Microsoft Copilot for Power BI.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Get%20Started%20With%20Copilot%20in%20Power%20BI.pdf"},
+    {"title": "Getting Started With Power BI", "description": "Basic introduction to the Power BI ecosystem.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Getting%20Started%20With%20Power%20BI.pdf"},
+    {"title": "ICON INTERNSHIP CERTIFICATE", "description": "Internship certification from Icon Geoengineering.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/ICON%20INTERNSHIP%20CERTIFICATE%20.pdf"},
+    {"title": "Introduction to Drilling Engineering", "description": "Fundamentals of drilling engineering and wellbore design.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Introduction%20to%20Drilling%20Engineering.pdf"},
+    {"title": "Introduction to GitHub", "description": "Version control and collaboration using GitHub.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Introduction%20to%20GitHub.pdf"},
+    {"title": "Member Certificate for 5110334", "description": "Membership certificate from a professional body.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Member%20Certificate%20for%205110334.pdf"},
+    {"title": "Perform Fit Gap Analysis", "description": "Business analysis for requirement fitment.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Perform%20fit%20gap%20analysis.pdf"},
+    {"title": "Propose a Solution as a Solution Architect", "description": "Solution architecture design practices for Power Platform and Dynamics 365.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Propose%20a%20solution%20as%20a%20Solution%20Architect%20for%20Microsoft%20Power%20Platform%20and%20Dynamics%20365.pdf"},
+    {"title": "Risk Assessment and Hazard Management", "description": "Training in risk identification and mitigation in industrial environments.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Risk%20Assessment%20and%20Hazard%20Management.pdf"},
+    {"title": "SPWLA Membership Appreciation Certificate", "description": "Recognition for active membership in SPWLA.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/SPWLA%20Membership%20Appreciation%20Certificate.pdf"},
+    {"title": "SPWLA Membership Card", "description": "Official SPWLA membership ID.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/SPWLA%20Membership%20Card.pdf"},
+    {"title": "SPWLA Membership Certificate", "description": "Membership certificate for Society of Petrophysicists and Well Log Analysts.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/SPWLA%20Membership%20Certificate.pdf"},
+    {"title": "Spatial Analysis", "description": "Data analysis using spatial relationships in GIS.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Spatial%20Analysis.pdf"},
+    {"title": "Strategic Planning", "description": "Planning and execution of organizational strategies.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Strategic%20Planning.pdf"},
+    {"title": "Well Testing Crash Course 4", "description": "Short course on well testing analysis techniques.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Well%20Testing%20Crash%20Course%204.pdf"},
+    {"title": "Work with Requirements for Microsoft Power Platform", "description": "Gathering and managing requirements for Power Platform and Dynamics 365 solutions.", "url": "https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/Work%20with%20requirements%20for%20Microsoft%20Power%20Platform%20and%20Dynamics%20365.pdf"},
+]
+
+# Sort certificates alphabetically by title
+certificates = sorted(certificates, key=lambda x: x["title"])
+
+cols = st.columns(3)
+for i, cert in enumerate(certificates):
+    with cols[i % 3]:
+        st.subheader(cert["title"])
+        st.caption(cert["description"])
+        st.markdown(f'<iframe src="{cert["url"]}" width="100%" height="300px" style="border:1px solid #ccc;"></iframe>', unsafe_allow_html=True)
+        st.markdown("---")
 
 # -----------------------------
 # Footer
 # -----------------------------
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown("<div style='text-align:center; font-size:14px;'>Created with ❤️ using Streamlit | © 2025 Orach Paul Francis</div>", unsafe_allow_html=True)
+st.markdown("""
+<hr style="margin-top: 2rem;">
+<p style='text-align: center; color: grey; font-size: 0.9rem;'>
+© 2025 Orach Paul Francis. Built with ❤️ using Streamlit.
+</p>
+""", unsafe_allow_html=True)
