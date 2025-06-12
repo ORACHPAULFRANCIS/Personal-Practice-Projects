@@ -174,6 +174,19 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # -----------------------------
+# Certifications
+# -----------------------------
+st.subheader("📄 Certifications")
+
+st.markdown("""
+<div class='card'>
+📜 **SPWLA Membership Appreciation Certificate**  
+<a href="https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/SPWLA%20Membership%20Appreciation%20Certificate.pdf" target="_blank">Click here to view or download</a>
+</div>
+""", unsafe_allow_html=True)
+
+
+# -----------------------------
 # Footer
 # -----------------------------
 st.markdown("<hr>", unsafe_allow_html=True)
