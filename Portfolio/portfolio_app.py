@@ -16,12 +16,20 @@ st.markdown("""
 
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
-        background: linear-gradient(to right, #dbeafe, #e0f2fe);
-        color: #1f2937;
+        background-color: rgb(18, 18, 18) !important;     /* Dark background */
+        color: rgb(235, 235, 235) !important;             /* Soft white text */
     }
 
-    .stButton>button {
-        background-color: #2563eb;
+    .card, .stMarkdown, .stText, .stSubheader, .stTitle {
+        background-color: rgb(30, 30, 30) !important;     /* Secondary background */
+        color: rgb(235, 235, 235) !important;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .stButton > button {
+        background-color: rgb(37, 99, 235) !important;    /* Primary blue */
         color: white;
         padding: 0.6rem 1.2rem;
         border-radius: 8px;
@@ -31,45 +39,47 @@ st.markdown("""
         box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
         transition: 0.3s ease;
     }
-    .stButton>button:hover {
-        background-color: #1d4ed8;
+
+    .stButton > button:hover {
+        background-color: rgb(29, 78, 216) !important;    /* Darker on hover */
     }
 
-    .stImage>img {
+    .stImage > img {
         border-radius: 50%;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.6);
     }
 
     h1, h2, h3 {
-        color: #1e3a8a;
+        color: #90cdf4 !important; /* Light blue headers */
         font-weight: 800;
     }
 
     hr {
         border: none;
         height: 2px;
-        background: #93c5fd;
+        background: #2563eb; /* Primary blue */
         margin: 2rem 0;
     }
 
     a {
-        color: #2563eb;
+        color: #3b82f6 !important; /* Link blue */
         text-decoration: none;
         font-weight: 600;
         transition: color 0.3s ease;
     }
+
     a:hover {
-        color: #1d4ed8;
+        color: #60a5fa !important;
         text-decoration: underline;
     }
 
-    .card {
-        background-color: #ffffff;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    /* Muted text (for footnotes, captions) */
+    .muted {
+        color: rgb(160, 160, 160) !important;
+        font-size: 14px;
     }
 </style>
+
 """, unsafe_allow_html=True)
 
 # -----------------------------
