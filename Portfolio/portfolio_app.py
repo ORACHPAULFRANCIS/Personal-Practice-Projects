@@ -78,7 +78,7 @@ st.markdown("""
 # -----------------------------
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("Portfolio/orach.jpg", width=200)
+    st.image("Portfolio/orach.png", width=200)
 with col2:
     st.title("Orach Paul Francis")
     st.markdown("#### Top Problem Solving Voice | Petroleum Engineer | Python Coder | Chairperson Membership Committee (Geological Society of Uganda) | IWCF 1 | Petrophysics | Power BI | Agile Project Management | Solutions Architecture")
