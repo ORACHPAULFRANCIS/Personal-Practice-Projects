@@ -180,12 +180,12 @@ st.subheader("📄 Certifications")
 
 st.markdown("""
 <div class='card'>
-📜 **SPWLA Membership Appreciation Certificate**
+SPWLA Membership Appreciation Certificate 
+<a href="https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/blob/main/Portfolio/SPWLA%20Membership%20Appreciation%20Certificate.pdf" target="_blank">
+👁️ View Certificate in Browser
+</a>
 </div>
 """, unsafe_allow_html=True)
-
-st.markdown("[📥 Click here to view/download](https://github.com/ORACHPAULFRANCIS/Personal-Practice-Projects/raw/main/Portfolio/SPWLA%20Membership%20Appreciation%20Certificate.pdf)", unsafe_allow_html=True)
-
 
 # -----------------------------
 # Footer
