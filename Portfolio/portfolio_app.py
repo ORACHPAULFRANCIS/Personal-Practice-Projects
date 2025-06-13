@@ -87,11 +87,8 @@ with col2:
   <summary style='font-weight:600; font-size:18px;'> About Me</summary>
   <div style='padding-top:10px; font-size:16px;'>
     Dynamic and results-driven Petroleum Engineer with strong expertise in subsurface data interpretation, formation evaluation, drilling planning, data analysis with Python, and technical project execution within the oil and gas sector.
-
     Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations.
-
     Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence.
-
     And oh, I currently use Streamlit for all my frontend stuff and Python for all my backend. But yeah...I am capable of learning anything (try me 😄).
   </div>
 </details>
