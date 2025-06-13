@@ -78,9 +78,7 @@ st.markdown("""
 # -----------------------------
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.markdown("""
-    <img src='Portfolio/orach.jpg' style='width:100%; border-radius: 50%; box-shadow: 0 6px 12px rgba(0,0,0,0.1);'/>
-    """, unsafe_allow_html=True)
+    st.image("Portfolio/orach.jpg", use_container_width=True)
 with col2:
     st.title("Orach Paul Francis")
     st.markdown("#### Top Problem Solving Voice | Petroleum Engineer | Python Coder | Chairperson Membership Committee (Geological Society of Uganda) | IWCF 1 | Petrophysics | Power BI | Agile Project Management | Solutions Architecture")
