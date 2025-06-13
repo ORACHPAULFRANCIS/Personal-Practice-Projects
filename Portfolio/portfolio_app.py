@@ -78,22 +78,26 @@ st.markdown("""
 # -----------------------------
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("Portfolio/orach.jpg", use_container_width=True)
+    st.markdown("""
+    <img src='Portfolio/orach.jpg' style='width:100%; border-radius: 50%; box-shadow: 0 6px 12px rgba(0,0,0,0.1);'/>
+    """, unsafe_allow_html=True)
 with col2:
     st.title("Orach Paul Francis")
     st.markdown("#### Top Problem Solving Voice | Petroleum Engineer | Python Coder | Chairperson Membership Committee (Geological Society of Uganda) | IWCF 1 | Petrophysics | Power BI | Agile Project Management | Solutions Architecture")
     st.markdown("""
-    <div class='card'>
-    Dynamic and results-driven Petroleum Engineer with strong expertise in subsurface data interpretation, formation evaluation, drilling planning, data analysis with Python, and technical project execution within the oil and gas sector.
+<details class='card'>
+  <summary style='font-weight:600; font-size:18px;'>📌 About Me</summary>
+  <div style='padding-top:10px; font-size:16px;'>
+    Dynamic and results-driven Petroleum Engineer with strong expertise in subsurface data interpretation, formation evaluation, drilling planning, data analysis with Python, and technical project execution within the oil and gas sector.<br><br>
 
-    Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations.
+    Demonstrated success in aligning technical solutions with field operations, enhancing reservoir performance, and supporting HSE compliance across upstream operations.<br><br>
 
-    Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence.
+    Skilled in Geolog, Petrel, Python, Numpy, Pandas, Matplotlib, Power BI, Streamlit, Flask and other industry-standard tools to deliver data-driven insights, optimize well planning, and drive operational excellence.<br><br>
 
-    And oh, I currently use Streamlit for all my frontend stuff and Python for all my backend. But yeah...I am capable of learning anything(try me😄).
-    </div>
-    """, unsafe_allow_html=True)
-
+    And oh, I currently use Streamlit for all my frontend stuff and Python for all my backend. But yeah...I am capable of learning anything (try me 😄).
+  </div>
+</details>
+""", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # -----------------------------
