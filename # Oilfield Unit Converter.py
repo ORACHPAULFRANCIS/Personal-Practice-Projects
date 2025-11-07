@@ -4,10 +4,10 @@ converting various oilfield units.
 I want to work with like minded individuals
 to perfect this program even though it is merely for
 praticing and mastering the skills of programming
-Fill free to share ideas with me, I want to
+Feel free to share ideas with me, I want to
 have a converter that can convert several
 parameters and not just in one direction but both ways
-I have initially started with four parameters only as you'll see below"""
+I have initially started with just a few parameters only as you'll see below"""
 # Function to convert pressure
 
 def convert_pressure():
@@ -106,7 +106,7 @@ def convert_pressure():
         # Convert from Pascal to target unit
         converted_value = value_in_pa / pressure_units[to_unit]
 
-        print(f"\n✅ {value} {from_unit} = {converted_value:.4f} {to_unit}")
+        print(f"\n✅ {value} {from_unit} = {converted_value:.6f} {to_unit}")
 
     except ValueError:
         print("❌ Invalid input. Please enter numeric values.")
