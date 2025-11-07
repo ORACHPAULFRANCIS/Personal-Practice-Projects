@@ -139,7 +139,7 @@ if parameter == "Pressure":
     if st.button("Convert Pressure"):
         pa = value * pressure_units[from_unit]
         result = pa / pressure_units[to_unit]
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
 
 elif parameter == "Temperature":
     from_unit = col1.selectbox("From Unit", temp_units)
@@ -147,7 +147,7 @@ elif parameter == "Temperature":
     if st.button("Convert Temperature"):
         kelvin = to_kelvin(value, from_unit)
         result = from_kelvin(kelvin, to_unit)
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
 
 elif parameter == "Volume":
     from_unit = col1.selectbox("From Unit", volume_units.keys())
@@ -155,7 +155,7 @@ elif parameter == "Volume":
     if st.button("Convert Volume"):
         liters = value * volume_units[from_unit]
         result = liters / volume_units[to_unit]
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
 
 elif parameter == "Depth":
     from_unit = col1.selectbox("From Unit", depth_units.keys())
@@ -163,7 +163,7 @@ elif parameter == "Depth":
     if st.button("Convert Depth"):
         meters = value * depth_units[from_unit]
         result = meters / depth_units[to_unit]
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
 
 elif parameter == "Density":
     from_unit = col1.selectbox("From Unit", density_units.keys())
@@ -171,7 +171,7 @@ elif parameter == "Density":
     if st.button("Convert Density"):
         kg_m3 = value * density_units[from_unit]
         result = kg_m3 / density_units[to_unit]
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
 
 elif parameter == "Flow Rate":
     from_unit = col1.selectbox("From Unit", flow_units.keys())
@@ -179,7 +179,7 @@ elif parameter == "Flow Rate":
     if st.button("Convert Flow Rate"):
         base = value * flow_units[from_unit]
         result = base / flow_units[to_unit]
-        st.success(f"✅ {value} {from_unit} = {result:.4f} {to_unit}")
+        st.success(f"✅ {value} {from_unit} = {result:.6f} {to_unit}")
 
 # Footer
 st.markdown("---")
